@@ -6,9 +6,9 @@ The script named 'extractor.py' will be the initiator which must be run to do th
 
 The script will use:
 
--python version: 2.7
+-python2.7
 
--python packages: bs4, requests,selenium
+-packages: bs4, requests,selenium
 
 -XML file generated after launching a specific ENA query
 
