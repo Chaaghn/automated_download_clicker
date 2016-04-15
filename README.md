@@ -1,4 +1,4 @@
-# python_fun
+# Clicky
 Combining virtual mouse clicker with multiple ENA dataset downloads
 
 I want to use python's virtual mouse-clicker package to programmatically download multiple datasets from EMBL-EBI's ENA website. 
