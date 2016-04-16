@@ -11,7 +11,8 @@
 # safety_first.py
 from Bio import Entrez
 # Contact details for website. # No email = NCBI blocks Newcastle!!
-Entrez.email = "C.A.Tuna2@newcastle.ac.uk" 
+# A temporary email creation service was used for this example:	https://temp-mail.org/en/
+Entrez.email = "blubber@leeching.net" 
 
 import os,subprocess,time
 from subprocess import Popen, PIPE
