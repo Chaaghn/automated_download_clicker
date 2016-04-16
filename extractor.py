@@ -13,7 +13,7 @@ from Bio import Entrez
 # Contact details for website. # No email = NCBI blocks Newcastle!!
 Entrez.email = "C.A.Tuna2@newcastle.ac.uk" 
 
-import os,subprocess
+import os,subprocess,time
 from subprocess import Popen, PIPE
 __location__=os.path.realpath(os.path.join(os.getcwd(),os.path.dirname(__file__)))
 
@@ -21,7 +21,8 @@ try:
 	# getlinks.py
 	script_1=os.path.join(__location__,'getlinks.py')
 	first=process = subprocess.Popen(["python",script_1],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
+	# Time has to be given to let the first script finish before starting the second
+	time.sleep(3)
 	# getloads.py
 	script_2=os.path.join(__location__,'getloads.py')
 	process = subprocess.Popen(["python",script_2],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
